@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> CRUD System</title>
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="w-50 m-auto p-5 my-4 rounded shadow-lg">
+    <input id="productName" class="form-control my-3 p-3" type="text" placeholder="Enter Product name... ">
+    <input id="productCategory" class="form-control my-3 p-3" type="text" placeholder="Enter Product category... ">
+    <input id="producrPrice" class="form-control my-3 p-3" type="number" placeholder="Enter Product Price... ">
+    <textarea name="" id="productDescription" class="form-control my-3 p-3" type="text" placeholder="Enter Product description... "></textarea>
+    <input type="file" class="form-control my-3" id="ProductImg">
+    <button id="addBtn" onclick="addProduct ()" class="btn btn-primary my-2"> Add product</button>
+    <button id="upateBtn" onclick="updateProudct()" class="btn btn-warning my-2">Update</button>
+    <input id="search" onkeyup="search(this.value)" type="text" class="form-control my-3 p-3" placeholder=" Search here...">
+
+  </div>
+
+<div class="container">
+  <div class="row" id="demo">
+
+  </div>
+  
+</div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
